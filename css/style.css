@@ -1,0 +1,526 @@
+/*
+
+font-family: 'Saira Extra Condensed', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+main-color:#007bff
+*/
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    }
+
+h2{
+    font-size: 3em;
+    letter-spacing: 5px;
+
+}
+
+.main{
+    position: relative;
+    top: 0;
+    left: 180px;
+}
+
+.side-bar .side-box ul li{
+    list-style-type: none;
+  
+  
+}
+.side-box{
+  position: relative;
+  width: 200px;
+  margin-top: 400px;
+    
+
+}
+.side-box ul li{
+ 
+    padding: 12px 20px;
+}
+.side-box img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+ margin-bottom: 20px;
+}
+.side-bar .side-box ul li a{
+    text-decoration: none;
+    color: rgb(96, 189, 250);
+    font-size: 18px;
+
+}
+.side-bar .side-box ul li a:hover{
+    color: #fff;
+}
+.side-bar{
+    position: fixed;
+    background-color: #007bff;
+    height: 100vh;
+    max-width: 200px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    
+}
+
+
+
+/*main visual*/
+.main{
+    background-image: url(../images/bg3.png);
+    background-size: cover;
+    background-position: center center;
+    height: 900px;
+    width: calc(100% - 200px);  
+    font-family: 'Saira Extra Condensed', sans-serif;    
+     left: 200PX;
+  
+}
+
+    
+
+.main .container{
+    display: flex;
+    /* justify-content:flex-start; */
+   
+    align-items: center;
+  
+    height: 100%;
+
+}
+.main .container .text{
+  
+    margin-left: 100px;
+  
+}
+.main .container h1{
+    font-size: 5em;
+    color: #fff;
+}
+.main .container .icon h2{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 2.5em;
+    color: #3083db;
+}
+.main .container .far{
+    font-size: 30px;
+    color: #ff0
+}
+/*goup button*/
+.goTopButton {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #3083db;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: #fff;
+    font-size: 22px;
+    display: none;
+}
+.goTopButton.show{
+    display:block;
+    z-index: 99;
+}
+
+/*animation effect */
+.far {
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+
+
+
+
+
+.main .container p{
+    font-size:18px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #ddd;
+}
+.main .container .text .social{
+    margin-top: 15px;
+}
+.main .container .text .social a{
+ padding: 5px 10px;
+}
+.main .container .text .social .fab{
+    font-size: 2em;
+    color: rgb(205, 212, 105);
+}
+/*main visual end */
+
+
+
+
+/*section work */
+/* section{
+    height: 900px;
+    width: 100%;
+  
+} */
+section .container{
+    width: 100%;
+    /* height: 100vh; */
+    text-align: center;
+    position: relative;
+
+  
+
+}
+#work{
+    /* width: calc(100% - 200px); */
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
+  
+   
+
+  
+}
+
+.section-title{
+    /* position: absolute;
+    top: 0;
+    margin-top: 100px;
+    left: 40%;
+    vertical-align: middle; */
+    margin: 0 auto;  
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+    /* height: 900px; */
+  
+   
+    margin-top: 50px;
+      
+}
+#work .section-title{
+    height: 900px;
+}
+.container .line{
+    border-bottom: 5px solid #007bff;
+    width: 40px;
+    display: inline-block;  
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+
+/*확대버튼*/
+.gallery .box a{
+  position: relative;
+}
+.gallery .box a .cover{
+    position: absolute;
+   top: 0;
+   left: 0;
+    width: 300px;
+    height: 0px;
+    background: rgba(0,0,0,0.5);
+    transition: 0.5s;
+    
+}
+.gallery .box a:hover .cover{
+    position: absolute;
+   top: 0;
+   left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,0.5);
+    
+}
+.gallery .box a .cover .fas{
+    display: none;
+}
+.gallery .box a .cover:hover .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ccc;
+    font-size: 3em;
+    display: block;
+}
+
+/*확대버튼수정 */
+.gallery .box .banner-sub a{
+    position: relative;
+  }
+  .gallery .box .banner-sub a .cover{
+      position: absolute;
+     top: 0;
+     left: 0;
+      width: 300px;
+      height: 0px;
+      background: rgba(0,0,0,0.5);
+      transition: 0.5s;
+      
+  }
+  .gallery .box .banner-sub a:hover .cover{
+      position: absolute;
+     top: 0;
+     left: 0;
+      width: 600px;
+      height: 49px;
+      background: rgba(0,0,0,0.5);
+      
+  }
+  .gallery .box .banner-sub a .cover .fas{
+      display: none;
+  }
+  .gallery .box .banner-sub a .cover:hover .fas{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #ccc;
+      font-size: 3em;
+      display: block;
+  }
+  
+
+  .gallery .mobile a:hover .cover{
+    position: absolute;
+   top: 0;
+   left: 0;
+    width: 200px;
+    height: 300px;
+    background: rgba(0,0,0,0.5);
+    
+}
+
+/*work*/
+#work .content .button-group{
+
+    /* margin-top: 0;
+    position: absolute;
+    top: 250px;
+    left: 35%; */
+    margin: 0 auto;
+}
+#work .content .button-group button{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #007bff;
+    background: #fff;
+     outline: none;
+     margin-left: 10px;
+     border: 1px solid #007bff;
+     transition: 0.5s;
+}
+#work .content .button-group button:hover{
+ background: #007bff;
+ color: #fff;
+ cursor: pointer;
+}
+#work .gallery .box{
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    display: none;
+
+    
+ 
+}
+#work .gallery .box img{
+    vertical-align: middle;
+}
+#work .gallery .box.show{
+    display: block;
+}
+#work .gallery .box a{
+ width: 300px;
+ border: 1px solid #ccc;
+margin-right: 50px;
+margin-top: 50px;
+overflow: hidden;
+}
+#work .gallery .box a{
+    display:inline-block;
+
+
+}
+#work .gallery .box a:nth-child(3n){
+    margin-right: 0 ;
+  
+}
+#work .gallery .banner .banner-sub{
+  
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+float: left;
+justify-content: space-around;
+align-items: flex-start;
+margin: 0;
+padding: 0;
+  
+}
+
+@media (max-width:1217px){
+    #work .gallery .box a:nth-child(3n){
+        margin-right: 50px ;
+      
+    }
+    #work .section-title{
+        height: 1200px;
+    }
+
+}
+#work .gallery .banner .banner-sub a{
+    overflow: visible;
+  
+}
+#work .gallery .banner .banner-sub a img{
+    width: 600px;
+ 
+
+}
+
+#work .gallery .mobile{
+    text-align: center;
+    margin-left:40px;
+}
+#work .gallery .mobile a{
+ width: 200px;
+ float: left;
+ margin-right: 40px !important;
+
+}
+
+#work .website p{
+    font-size:25px;
+   
+    background: #000;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 50px;
+   line-height: 50px;
+   font-family: 'Saira Extra Condensed', sans-serif;
+
+}
+/*section work end */
+
+
+
+/*section skill */
+#skills{
+    background-image: url(../images/skill-bg1.jpg);
+    background-size: cover;
+    background-position: center center; 
+    
+}
+#skills h2{
+    color: #fff;
+    letter-spacing: 5px;
+    margin-top: 20px;
+   
+}
+#skills .text{
+ margin-left: 0;
+
+}
+#skills .text span{
+    font-size: 23px;
+}
+
+#skills .container .content .content-box{
+ 
+    text-align: center;
+   margin-top: 50px;
+   padding: 10px;
+   background: rgba(150, 143, 143, 0.527);
+ margin-right: 10px;
+  
+}
+
+#skills .container .content .content-box .fab, #skills .container .content .content-box .fas{
+    font-size: 5em;
+    color: #007bff;
+    margin-top: 20px;
+}
+/*section skills end */
+
+
+
+
+/*section contact */
+#contact .container .section-title{
+    height: 500px;
+    margin-top: 100px;
+  
+}
+#contact .container .section-title .content{
+    display: flex;
+}
+#contact .container .section-title .content .form-area{
+    flex: 3;
+  
+      margin-right: 50px;
+}
+#contact .container .section-title .content .form-area input{
+    width: 100%;
+    height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 40px;
+    font-size: 1em;
+  
+}
+#contact .container .section-title .content .form-area #memo{
+    margin-top: 40px;
+    margin-left: 0;
+    float: left;
+    width: 100%;
+    font-size: 1em;
+}
+#contact #send, #contact #reset{
+    width: 100px;
+    font-size: 13px;
+    margin-right: 20px;
+    background: #007bff;
+    color: #fff;
+    margin-bottom: 150px;
+}
+#contact .container .section-title .content .icon-area{
+    flex: 1;
+    border: 1px solid #ccc;
+    /* padding-top: 50px; */
+    margin-top: 40px;
+    height: 467px;
+}
+
+#contact .icon-area .icon{
+  
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+#contact .icon-area .icon .fas{
+    font-size: 3em;
+    color: #007bff;
+}
+#contact .icon-area .icon span{
+    font-size: 20px;
+   color: #666;
+}
+#contact .icon-area .icon p{
+    color: #666;
+}
+/*section contact end */
+
+

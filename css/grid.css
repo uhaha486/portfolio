@@ -1,0 +1,39 @@
+/*grid system */
+@media (min-width:768px){
+
+    .row{
+        position: relative;
+        width: 100%;
+        /* overflow:hidden; */
+    
+    }
+    .row:after{
+        content: '';
+        /* display: block; */
+        clear: both;
+    }
+    .col-6{
+        width: 50%;
+        float: left;
+     }
+     .col-4{width: 33.33%;
+      float: left;}
+     
+      .col-3{width:24%;
+         float: left;}
+      .col-12{width:100%;
+         float: left;}
+      .col-1{width:8.33%;
+         float: left;}
+         /*테블릿*/
+     
+}
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+.container{
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto;
+    position: relative;
+}
+/*column grid 12grid:칼럼 12분할*/
