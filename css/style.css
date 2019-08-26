@@ -75,7 +75,7 @@ h2{
     background-image: url(../images/bg3.png);
     background-size: cover;
     background-position: center center;
-    height: 900px;
+    height: 890px;
     width: calc(100% - 200px);  
     font-family: 'Saira Extra Condensed', sans-serif;    
      left: 200PX;
@@ -320,6 +320,7 @@ section .container{
      margin-left: 10px;
      border: 1px solid #007bff;
      transition: 0.5s;
+     width: 18%;
 }
 #work .content .button-group button:hover{
  background: #007bff;
@@ -330,9 +331,7 @@ section .container{
     margin-top: 50px;
     height: 300px;
     width: 100%;
-    display: none;
-
-    
+    display: none; 
  
 }
 #work .gallery .box img{
@@ -363,11 +362,18 @@ overflow: hidden;
     flex-direction: column;
     width: 600px;
 float: left;
-justify-content: space-around;
-align-items: flex-start;
+/* justify-content: space-around; */
+/* align-items: flex-start; */
 margin: 0;
 padding: 0;
   
+}
+#work .gallery .banner>a{
+   float: left;
+   margin-left: 3%;
+}
+#work .gallery .banner{
+    margin-left:8%;
 }
 
 @media (max-width:1217px){
@@ -397,7 +403,7 @@ padding: 0;
 #work .gallery .mobile a{
  width: 200px;
  float: left;
- margin-right: 40px !important;
+ margin-right: 2.5% !important;
 
 }
 
@@ -493,9 +499,17 @@ padding: 0;
     width: 100px;
     font-size: 13px;
     margin-right: 20px;
-    background: #007bff;
-    color: #fff;
+    border: 1px solid #007bff;
+    background: #fff;
+    color: #007bff;
     margin-bottom: 150px;
+    transition: 0.5s;
+  
+
+}
+#contact #send:hover, #contact #reset:hover{
+    color:#fff ;
+    background: #007bff;
 }
 #contact .container .section-title .content .icon-area{
     flex: 1;
